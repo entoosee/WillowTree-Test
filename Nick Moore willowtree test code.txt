@@ -1,0 +1,53 @@
+# Included gems 
+require "bundler"
+require "rubygems"
+#require "webdrivers"
+require "page-object" 
+require "rake"
+require "benchmark"
+require "capybara"
+require "rubocop"
+require "ruport"
+require "rspec"
+require "capybara/rspec"
+require "capybara-screenshot/rspec" 
+# require "selenium-webdriver"
+require 'win32ole'
+require "watir"
+require "watir-webdriver-performance"
+require "data_magic"
+require "./PortalURLData.rb"
+ 
+# Launch driver 
+#def setup
+#Selenium::WebDriver::Chrome.path = 'C:\Program Files (x86)\Google/Chrome\Application\Chrome.exe'
+#caps = Selenium::WebDriver::Remote::Capabilities.chrome
+#client = Selenium::WebDriver::Remote::Http::Default.new
+#client.timeout = 120
+#url = "http://localhost:4444/wd/hub"
+#Watir::Browser.new :remote, {desired_capabilities: caps, http_client: client, url: url}
+#browser = Watir::Browser.new :firefox
+#browser = Watir::Browser.new :ie
+ browser = Watir::Browser.new :chrome
+ #set script implicit wait to ten seconds 
+browser.driver.manage.timeouts.implicit_wait = 45
+#end
+
+ browser.goto("http://www.ericrochester.com/name-game/")
+ browser.imgs(0).click    
+ browser.imgs(1).click
+ browser.imgs(2).click
+ browser.imgs(3).click
+ browser.imgs(4).click
+ driver.execute_script("arguments[0].setAttribute('style', arguments[1]);",  <span class="attempts"> , "color: yellow; border: 2px solid yell>  
+ driver.execute_script("arguments[0].setAttribute('style', arguments[1]);",  <span class="correct"> , "color: yellow; border: 2px solid yell>  
+ driver.execute_script("arguments[0].setAttribute('style', arguments[1]);",  <span class="streak"> , "color: yellow; border: 2px solid yell>
+ 
+end
+
+ puts  "Page test complete? Y|N"
+ reply = gets.chomp
+ 
+
+	end 
+#end

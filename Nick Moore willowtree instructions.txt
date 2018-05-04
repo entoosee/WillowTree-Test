@@ -1,0 +1,39 @@
+Instructions:
+
+I was not able to get the code to work on my home machine but I am still going to include the code to show what I attempted and what you would do to install Ruby on your machine.
+
+Please download the following things to get the Ruby test to function properly...
+
+https://rubyinstaller.org/downloads/ Ruby+Devkit 2.4.4-1 (x64) 
+
+https://www.chromium.org/Home Chromium  (For Chrome use only)
+
+Install Ruby first and when the prompt comes up, please type in 1,2,3 then press enter.
+
+Once this is installed successfully, put the Chromium.exe file in the Ruby bin directory.
+
+Then verify you have the following gems and if you do not, please download from https://rubygems.org/
+
+require "bundler"
+require "rubygems"
+#require "webdrivers"
+require "page-object" 
+require "rake"
+require "benchmark"
+require "capybara"
+require "rubocop"
+require "ruport"
+require "rspec"
+require "capybara/rspec"
+require "capybara-screenshot/rspec" 
+# require "selenium-webdriver"
+require 'win32ole'
+require "watir"
+require "watir-webdriver-performance"
+require "data_magic"
+require "./PortalURLData.rb"
+
+
+
+
+
